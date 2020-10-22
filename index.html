@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Track Calories</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper blue">
+      <div class="container">
+        <a href="#" class="brand-logo center">Track Calories</a>
+        <ul class="right">
+          <li><a href="#" class="clear-btn btn blue lighten-3">Clear All</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  
+  <div class="container">
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-title">Add item</div>
+        <!-- Form -->
+        <form class="col">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" 
+                     placeholder="Add meal" 
+                     id="item-name">
+              <label for="item-name">Meal</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="number" 
+                     placeholder="Add calories" 
+                     id="item-calories">
+              <label for="item-calories">Calories</label>
+            </div>
+            
+          </div>
+          <!-- Buttons-->
+          <button class="add-btn btn blue darken-3"> 
+            <i class="tiny material-icons">add</i>
+            Add Meal
+          </button>
+          <button class="update-btn btn orange darken-3"> 
+            <i class="tiny material-icons">edit</i>
+            Update Meal
+          </button>
+          <button class="delete-btn btn red"> 
+            <i class="tiny material-icons">delete</i>
+            Delete Meal
+          </button>
+          <button class="back-btn btn grey right"> 
+            <i class="tiny material-icons">chevron_left</i>
+            Back
+          </button>
+          <!-- End of Buttons-->   
+        </form>
+        <!-- End pf Form -->
+      </div>
+    </div>
+
+      <!-- List -->
+      <ul id="item-list" class="collection"></ul>
+
+      <!-- Calories -->
+      <h3 class="center-align">
+        Total Calories: <span class="total-calories">0</span>
+      </h3>
+  </div>
+
+        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
